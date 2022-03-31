@@ -1,14 +1,18 @@
 :root {
   --white: #ffffff;
   --black: #000000;
+  --blue: #6AB8CC;
   --smoke: #F4F5EF;
   --gray: #E5E5E5;
 
-  --primary: #2F505E;
-  --second: #D75E5B;
+  --yellow: rgba(217, 192, 2, 0.5);
+  --second: #E7380D;
   --text-body: #282828;
+  --whitergb: rgba(247, 245, 245,0.5);
+  --whitelight: rgba(247, 245, 245, 0.8);
+  --grayrgb: rgba(125, 127, 128, 0.1);
 
-  --radius: 5px;
+  --radius: 30px;
 }
 
 /* Base Setting
@@ -51,7 +55,7 @@ h5,
 h6 {
   font-family: $heading-font;
   font-weight: 700;
-  color: var(--primary);
+  color: var(--black);
 }
 
 h1 {
@@ -111,4 +115,27 @@ h6 {
 img {
   max-width: 100%;
   vertical-align: bottom;
+}
+
+.btn__link {
+  width: 400px;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: rem(24px);
+  background: var(--second);
+  color: var(--white);
+  border: 5px solid var(--white);
+  border-radius: 45px;
+  box-shadow: 5px 5px var(--gray);
+
+  &::before {
+      width: 30px;
+      height: 30px;
+      position: relative;
+      margin-right: 5px;
+      content: '';
+      background: url('../images/cv.png');
+  }
 }

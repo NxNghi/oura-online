@@ -25,6 +25,7 @@
     "build": "./build.sh export-html"
   },
   "dependencies": {
-    "node-sass": "^7.0.0"
+    "node-sass": "^7.0.0",
+    "slick-carousel": "^1.8.1"
   }
 }

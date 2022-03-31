@@ -19,7 +19,7 @@ function template_part($template_name = '', $data = [], $echo =  true ){
 
     }
     return '';
-}
+}   
 
 /**
  * Show image from path with params is image name
